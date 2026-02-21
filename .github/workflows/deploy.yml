@@ -1,0 +1,19 @@
+name: Deploy New Version
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Build image
+        run: docker build -t java-hello-world .
+
+      - name: Run container (temporary)
+        run: |
+          docker run --rm java-hello-world
