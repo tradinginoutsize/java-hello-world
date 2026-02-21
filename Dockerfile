@@ -10,5 +10,5 @@ COPY HelloWorld.java .
 # Compilar el programa
 RUN javac HelloWorld.java
 
-# Comando por defecto al iniciar el contenedor last
+# Comando por defecto al iniciar el contenedor last version
 CMD ["java", "HelloWorld"]
