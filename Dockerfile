@@ -4,7 +4,7 @@ FROM eclipse-temurin:17-jdk-alpine
 # Directorio de trabajo dentro del contenedor
 WORKDIR /app
 
-# Copiar el archivo Java prueba
+# Copiar el archivo Java prueba jala
 COPY HelloWorld.java .
 
 # Compilar el programa
